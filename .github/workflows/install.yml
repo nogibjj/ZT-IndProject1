@@ -1,13 +1,25 @@
 name: Install Dependencies
-on: [push, pull_request]
+
+on: 
+  push:
+    branches:
+      - main
+
 jobs:
-  install:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.8'
-    - name: Install dependencies
+        python-version: 3.9
+
+    - name: Upgrade pip
+      run: pip install --upgrade pip
+
+    - name: Install Dependencies
       run: pip install -r requirements.txt
