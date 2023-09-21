@@ -1,20 +1,25 @@
-import os
-import polars as pl
-import matplotlib.pyplot as plt
-def read_dataset(file_path: str) -> pl.DataFrame:
-    if file_path.endswith('.csv'):
-        data = pl.read_csv(file_path, infer_schema_length=10000)
-    elif file_path.endswith('.xlsx'):
-        data = pl.read_excel(file_path, infer_schema_length=10000)
-    else:
-        raise ValueError("Unsupported file type")
-    return data
-def generate_summary_statistics(data: pl.DataFrame) -> dict:
-    if data is None or data.shape[0] == 0:
-        raise ValueError("Data cannot be None or empty")
-    summary = {
-        "mean": data.mean().to_dict(),
-        "median": data.median().to_dict(),
-        "std_dev": data.std().to_dict()
-    }
-    return summary
+import unittest
+from src.lib import read_dataset, generate_summary_statistics
+
+
+class TestLib(unittest.TestCase):
+
+    def setUp(self):
+        # Setup a test dataframe using a subset of your data
+        self.data = read_dataset('tests/test.csv')
+
+    def test_read_dataset(self):
+        # Test that read_dataset is working correctly
+        data = read_dataset('tests/test.csv')
+        self.assertIsNotNone(data)
+
+    def test_generate_summary_statistics(self):
+        # Test that generate_summary_statistics is working correctly
+        summary = generate_summary_statistics(self.data)
+        self.assertIn('mean', summary)
+        self.assertIn('median', summary)
+        self.assertIn('std_dev', summary)
+
+
+if __name__ == '__main__':
+    unittest.main()
