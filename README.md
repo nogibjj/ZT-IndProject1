@@ -34,4 +34,7 @@ Included csv dataset to perform descriptive statistics using polars in jupyter n
 * .devcontainer: Configurations for the VS Code remote container development environment
 * .github/workflows: Workflow definitions for Continuous Integration using GitHub Actions
 
+  # Demo video link
+***
+
 # The end
