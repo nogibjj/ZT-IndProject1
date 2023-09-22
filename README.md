@@ -1,4 +1,8 @@
-([![Code Formatting](https://github.com/JTuratkhan/ZT-IndProject1/actions/workflows/format.yml/badge.svg?branch=main)](https://github.com/JTuratkhan/ZT-IndProject1/actions/workflows/format.yml))
+[![Code Formatting](https://github.com/JTuratkhan/ZT-IndProject1/actions/workflows/format.yml/badge.svg?branch=main)](https://github.com/JTuratkhan/ZT-IndProject1/actions/workflows/format.yml)
+[![Code Linting](https://github.com/JTuratkhan/ZT-IndProject1/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/JTuratkhan/ZT-IndProject1/actions/workflows/lint.yml)
+[![Install Dependencies](https://github.com/JTuratkhan/ZT-IndProject1/actions/workflows/install.yml/badge.svg?branch=main)](https://github.com/JTuratkhan/ZT-IndProject1/actions/workflows/install.yml)
+[![Run Tests](https://github.com/JTuratkhan/ZT-IndProject1/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/JTuratkhan/ZT-IndProject1/actions/workflows/tests.yml)
+
 # ZT-IndProject1🍎
 
 # # Continuous Integration using GitHub Actions of Python Data Science Project
