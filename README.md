@@ -1,3 +1,4 @@
+([![Code Formatting](https://github.com/JTuratkhan/ZT-IndProject1/actions/workflows/format.yml/badge.svg?branch=main)](https://github.com/JTuratkhan/ZT-IndProject1/actions/workflows/format.yml))
 # ZT-IndProject1🍎
 
 # # Continuous Integration using GitHub Actions of Python Data Science Project
