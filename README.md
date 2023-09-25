@@ -35,6 +35,6 @@ Included csv dataset to perform descriptive statistics using polars in jupyter n
 * .github/workflows: Workflow definitions for Continuous Integration using GitHub Actions
 
   # Demo video link
-***
+https://vimeo.com/867786044/1bd4d4d215?share=copy 
 
 # The end
